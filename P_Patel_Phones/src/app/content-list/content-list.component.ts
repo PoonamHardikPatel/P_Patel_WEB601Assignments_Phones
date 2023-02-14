@@ -31,8 +31,8 @@ export class ContentListComponent {
     this.contentArray = [
       {
         id: 1,
-        title: 'mySampleTitle1',
-        description: 'This is a description1',
+        title: 'My PHone 1',
+        description: 'This is a description of Phone 1.',
         creator: 'Creator1',
         imgURL: 'https://media.4rgos.it/i/Argos/9520103_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
         type: 'rock music',
@@ -40,8 +40,8 @@ export class ContentListComponent {
       },
       {
         id: 2,
-        title: 'mySampleTitle2',
-        description: 'This is a description2',
+        title: 'My PHone 2',
+        description: 'This is a description of Phone 2',
         creator: 'Creator2',
         imgURL: 'https://media.4rgos.it/i/Argos/9520608_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
         type: 'rock music',
@@ -49,8 +49,8 @@ export class ContentListComponent {
       },
       {
         id: 3,
-        title: 'mySampleTitle3',
-        description: 'This is a description3',
+        title: 'My PHone 3',
+        description: 'This is a description of Phone 3',
         creator: 'Creator3',
         imgURL: 'https://media.4rgos.it/i/Argos/9520055_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
         type: 'rock music',
@@ -58,8 +58,8 @@ export class ContentListComponent {
       },
       {
         id: 4,
-        title: 'mySampleTitle4',
-        description: 'This is a description4',
+        title: 'My PHone 4',
+        description: 'This is a description of Phone 4',
         creator: 'Creator4',
         imgURL: 'https://media.4rgos.it/i/Argos/9520103_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
         type: 'rock music',
@@ -67,8 +67,8 @@ export class ContentListComponent {
       },
       {
         id: 5,
-        title: 'mySampleTitle5',
-        description: 'This is a description5',
+        title: 'My PHone 5',
+        description: 'This is a description of Phone 5',
         creator: 'Creator5',
         imgURL: 'https://media.4rgos.it/i/Argos/9520608_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
         type: 'rock music',

@@ -10,7 +10,7 @@
 
 
 <div *ngFor="let content of contentArray; let i = index"
-     class="content-card" style="padding:10px; margin:10px;" 
+     class="content-card" style="padding:30px; margin:30px; border-radius:30px;" 
      [ngStyle]="{ border: i == 0 ? '2px solid black' : '1px solid gray' }">
   <header class="content-card-header">
     {{ content.title }}
