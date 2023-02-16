@@ -42,4 +42,8 @@ For Assignment 2 :
 
 For Assignment 3 :
 
-- 
+- Add one content in array (file : content-list.component.ts)
+- Generate pipe with command through cmd prompt. (named : content-list.pipe)
+
+- Update the pipe condition (file : content-list.pipe.ts)
+- Now it's time to update html file for display (file : content-list.component.html)
