@@ -2,25 +2,13 @@
 
 <p>Phones List</p>
 
-<!--<div>
-  <ul>
-    <li *ngFor="let item of contentArray">{{item.title}} <br /> {{item.imgURL}}</li>
-  </ul>
-</div>-->
-
 
 <div *ngFor="let content of contentArray; let i = index"
-     class="content-card" style="padding:30px; margin:30px; border-radius:30px;" 
+     class="content-card" style="padding:30px; margin:30px; border-radius:30px;"
      [ngStyle]="{ border: i == 0 ? '2px solid black' : '1px solid gray' }">
   <header class="content-card-header">
     {{ content.title }}
   </header>
-
-  <!--
-    <div (click)="console.log(content.id + ' - ' + content.title)">
-    <img [src]="content.imageURL" alt="content image" />
-  </div>
-  -->
 
   <div class="content-card-body">
     <p><img src="{{ content.imgURL }}" alt="content image" style="width: 20%" /></p>
@@ -34,6 +22,16 @@
     </p>
   </div>
 </div>
+
+
+
+
+<!--<div>
+  <ul>
+    <li *ngFor="let item of contentArray">{{item.title}} <br /> {{item.imgURL}}</li>
+  </ul>
+</div>-->
+
 
 <!--
 <div *ngFor="let content of Content; let i = index" class="content-card" [ngStyle]="{'border': i == 0 ? '2px solid black' : '1px solid gray'}">
