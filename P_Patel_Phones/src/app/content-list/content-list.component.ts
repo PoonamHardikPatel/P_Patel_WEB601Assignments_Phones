@@ -31,7 +31,7 @@ export class ContentListComponent {
     this.contentArray = [
       {
         id: 1,
-        title: 'My Phone 1',
+        title: 'My Android Phone 1',
         description: 'This is a description of Phone 1.',
         creator: 'Creator1',
         imgURL: 'https://media.4rgos.it/i/Argos/9520103_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
@@ -40,7 +40,7 @@ export class ContentListComponent {
       },
       {
         id: 2,
-        title: 'My Phone 2',
+        title: 'My IOS Phone 2',
         description: 'This is a description of Phone 2',
         creator: 'Creator2',
         imgURL: 'https://media.4rgos.it/i/Argos/9520608_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
@@ -76,7 +76,7 @@ export class ContentListComponent {
       },
       {
         id: 6,
-        title: 'My Phone 6',
+        title: 'My IOS Phone 6',
         description: 'This is a description of Phone 6',
         creator: 'Creator6',
         imgURL: 'https://media.4rgos.it/i/Argos/9520055_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
@@ -85,7 +85,7 @@ export class ContentListComponent {
       },
       {
         id: 7,
-        title: 'My Phone 7',
+        title: 'My Android Phone 7',
         description: 'This is a description of Phone 7',
         creator: 'Creator7',
         imgURL: 'https://media.4rgos.it/i/Argos/9520055_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
@@ -93,6 +93,26 @@ export class ContentListComponent {
         tags: ['Tag 7.1', 'Tag 7.2'],
       }
     ];
+  }
+
+
+
+
+  searchTerm = '';
+  searchResults: Content[] = [];
+  searchExists = false;
+
+  checkExistence()
+  {
+    /*
+    if (this.searchTerm.trim() === '')
+    {
+      this.searchExists = false;
+      return;
+    }
+    */
+    this.searchResults = this.contentArray.filter(item => item.title.toLowerCase().includes(this.searchTerm.toLowerCase()));
+    this.searchExists = this.searchResults.length > 0;
   }
 
 

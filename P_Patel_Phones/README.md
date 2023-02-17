@@ -50,3 +50,11 @@ For Assignment 3 :
 
 - Update and added the for loop for each type in html file (file : content-list.component.html)
 - Added the CSS
+
+- From & Search field added 
+- button click event added
+
+- Update html code (file : content-list.omponent.html)
+- Add click event function in (file : content-list.component.ts)
+
+- Completed on 17th Feb 2023...
