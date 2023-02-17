@@ -47,3 +47,6 @@ For Assignment 3 :
 
 - Update the pipe condition (file : content-list.pipe.ts)
 - Now it's time to update html file for display (file : content-list.component.html)
+
+- Update and added the for loop for each type in html file (file : content-list.component.html)
+- Added the CSS
