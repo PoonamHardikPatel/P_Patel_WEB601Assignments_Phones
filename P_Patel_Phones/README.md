@@ -77,6 +77,8 @@ For Assignment 4 :
 - Create an attribute directive called Hover-Affect. Apply this attribute directive to your
   type in your Content-Card, and use it to add an underline to the type when a user
   hovers over the type, and remove the underline when they hover away from the type.
-
+  Created files : 
+  1.) hover-affect.directive.spec.ts
+  2.) hover-affect.directive.ts
 
 
