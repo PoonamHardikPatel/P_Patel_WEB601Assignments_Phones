@@ -58,3 +58,25 @@ For Assignment 3 :
 - Add click event function in (file : content-list.component.ts)
 
 - Completed on 17th Feb 2023...
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+For Assignment 4 :
+
+- Create new branch named - "Assignment_4"
+
+- In Content-Card, if the imgURL is not set, display a default image on the card
+  instead (use an image relevant to your theme), using either *ngIf or *ngSwitch. 
+  (file : content-list.component.html)
+- In Content-List component, add or edit some elements to your array of Content so you
+  have at least 1 item with no imgUrl set, to make sure this new functionality works correctly.
+  (file : content-list.component.ts)
+
+- Create an attribute directive called Hover-Affect. Apply this attribute directive to your
+  type in your Content-Card, and use it to add an underline to the type when a user
+  hovers over the type, and remove the underline when they hover away from the type.
+
+
+
