@@ -38,16 +38,18 @@
 <br />
 
 
-<h1 style="padding: 20px; margin: 20px; background-color: antiquewhite; color: darkblue;"> Type : No Type </h1>
 
-<ul>
+<h1 appHoverAffect="underline" style="padding: 20px; padding-left:550px; margin: 20px; font-size:60px;
+  background-color: antiquewhite; color: darkblue;"> Type : No Type </h1>
+
+<ul style="padding-left:300px">
   <li style="list-style-type: none; font-family:'Times New Roman', Times, serif;"
       *ngFor="let content of contentArray | contentList: ''">
 
-    <div class="content-card" style="width: 40%; padding: 10px; margin: 10px; border-radius: 10%;
+    <div class="content-card" style="width: 70%; padding: 10px; margin: 10px; border-radius: 10%;
       text-align: center; background-color: antiquewhite; color: darkmagenta; margin-bottom: 50px; ">
 
-      <h1 class="content-card-header">
+      <h1 class="content-card-header" style="font-size:50px">
         {{content.title}}
       </h1>
       <div class="content-card-body">
@@ -61,12 +63,12 @@
           </ng-template>
         </p>
 
-        <p style="font-size:20px">{{ content.description }}</p>
-        <p><strong>Creator:</strong> {{ content.creator }}</p>
-        <p><strong>Type:</strong> {{ content.type }}</p>
-        <p>
+        <p style="font-size:30px">{{ content.description }}</p>
+        <p style="font-size:30px"><strong>Creator:</strong> {{ content.creator }}</p>
+        <p style="font-size:30px" appHoverAffect="underline"><strong>Type:</strong> {{ content.type }}</p>
+        <p style="font-size:30px">
           <strong>Tags:</strong>
-          <span>{{ content.tags }}</span>
+          <span *ngFor="let tag of content.tags" appHoverAffect="bold">&emsp;{{ tag }}</span>
         </p>
       </div>
 
@@ -83,16 +85,17 @@
 <br />
 
 
-<h1 style="padding: 20px; margin: 20px; background-color: burlywood; color: darkblue; "> Type : IOS </h1>
+<h1 appHoverAffect="underline" style="padding: 20px; padding-left: 550px; margin: 20px; font-size: 60px;
+  background-color: burlywood; color: darkblue; "> Type : IOS </h1>
 
-<ul>
+<ul style="padding-left:300px">
   <li style="list-style-type: none; font-family:'Times New Roman', Times, serif"
       *ngFor="let content of contentArray | contentList: 'ios'">
 
-    <div class="content-card" style="width: 40%; padding: 10px; margin: 10px; border-radius: 10%;
+    <div class="content-card" style="width: 70%; padding: 10px; margin: 10px; border-radius: 10%;
       text-align: center; background-color: burlywood; color: darkmagenta; margin-bottom: 50px; ">
 
-      <h1 class="content-card-header">
+      <h1 class="content-card-header" style="font-size:50px">
         {{content.title}}
       </h1>
       <div class="content-card-body">
@@ -106,12 +109,12 @@
           </ng-template>
         </p>
 
-        <p style="font-size:20px">{{ content.description }}</p>
-        <p><strong>Creator:</strong> {{ content.creator }}</p>
-        <p><strong>Type:</strong> {{ content.type }}</p>
-        <p>
+        <p style="font-size:30px">{{ content.description }}</p>
+        <p style="font-size:30px"><strong>Creator:</strong> {{ content.creator }}</p>
+        <p style="font-size:30px" appHoverAffect="underline"><strong>Type:</strong> {{ content.type }}</p>
+        <p style="font-size:30px">
           <strong>Tags:</strong>
-          <span>{{ content.tags }}</span>
+          <span *ngFor="let tag of content.tags" appHoverAffect="bold">&emsp;{{ tag }}</span>
         </p>
       </div>
 
@@ -128,16 +131,17 @@
 <br />
 
 
-<h1 style="padding: 20px; margin: 20px; background-color: darksalmon; color: darkblue; "> Type: Android </h1>
+<h1 appHoverAffect="underline" style="padding: 20px; padding-left: 550px; margin: 20px; font-size: 60px;
+  background-color: darksalmon; color: darkblue; "> Type: Android </h1>
 
-<ul>
+<ul style="padding-left:300px">
   <li style="list-style-type: none; font-family:'Times New Roman', Times, serif"
       *ngFor="let content of contentArray | contentList: 'android'">
 
-    <div class="content-card" style="width: 40%; padding: 10px; margin: 10px; border-radius: 10%;
+    <div class="content-card" style="width: 70%; padding: 10px; margin: 10px; border-radius: 10%;
       text-align: center; background-color: darksalmon; color: darkmagenta; margin-bottom: 50px; ">
 
-      <h1 class="content-card-header">
+      <h1 class="content-card-header" style="font-size:50px">
         {{content.title}}
       </h1>
       <div class="content-card-body">
@@ -151,12 +155,12 @@
           </ng-template>
         </p>
 
-        <p style="font-size:20px">{{ content.description }}</p>
-        <p><strong>Creator:</strong> {{ content.creator }}</p>
-        <p><strong>Type:</strong> {{ content.type }}</p>
-        <p>
+        <p style="font-size:30px">{{ content.description }}</p>
+        <p style="font-size:30px"><strong>Creator:</strong> {{ content.creator }}</p>
+        <p style="font-size:30px" appHoverAffect="underline"><strong>Type:</strong> {{ content.type }}</p>
+        <p style="font-size:30px">
           <strong>Tags:</strong>
-          <span>{{ content.tags }}</span>
+          <span *ngFor="let tag of content.tags" appHoverAffect="bold">&emsp;{{ tag }}</span>
         </p>
       </div>
 

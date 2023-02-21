@@ -74,11 +74,31 @@ For Assignment 4 :
   have at least 1 item with no imgUrl set, to make sure this new functionality works correctly.
   (file : content-list.component.ts)
 
-- Create an attribute directive called Hover-Affect. Apply this attribute directive to your
-  type in your Content-Card, and use it to add an underline to the type when a user
-  hovers over the type, and remove the underline when they hover away from the type.
+- Create an attribute directive called Hover-Affect. 
   Created files : 
   1.) hover-affect.directive.spec.ts
   2.) hover-affect.directive.ts
 
+- Apply this attribute directive to your
+  type in your Content-Card, and use it to add an underline to the type when a user
+  hovers over the type, and remove the underline when they hover away from the type.
+  Updated Files :
+  1.) hover-affect.directive.ts
+    - Update the code and add "@HostBinding" & "@HostListener" for style "textDecoration".
+  2.) content-list.component.html
+    - Add an attribute "appHoverAffect" in "content.type" and in "<h1>".
 
+- Use the same directive to bold the individual tags when a user hovers over one, and
+  removes the bold when they hover away. (Hint: directives can accept inputs, to help decide
+  what style is being changed)
+  Make sure it operates on each individual tag and not just on all the tags at the same time.
+  (Hint: if you're having trouble separating the tags when you display them, go look at my
+  sample solution for assignment 2)
+  Updated Files :
+  1.) hover-affect.directive.ts
+    - Update the code and add "if" condition in "@HostBinding" & "@HostListener" for style "textDecoration" & "fontWeight".
+  2.) content-list.component.html
+    - Add an attribute "appHoverAffect="underline"" in "content.type" and in "<h1>" tag.
+    - Add an attribute "appHoverAffect="bold"" in "content.tag" and add "ngFor" in "<span>" tag.
+
+- Completed on 21st Feb 2023...
