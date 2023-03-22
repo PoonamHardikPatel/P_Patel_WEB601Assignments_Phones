@@ -5,8 +5,9 @@
     "\\P_Patel_Phones\\src",
     "\\P_Patel_Phones\\src\\app",
     "\\P_Patel_Phones\\src\\app\\content-list",
+    "\\P_Patel_Phones\\src\\app\\create-content",
     "\\P_Patel_Phones\\src\\app\\helper-files"
   ],
-  "SelectedNode": "\\P_Patel_Phones\\package.json",
+  "SelectedNode": "\\P_Patel_Phones\\src\\app\\create-content\\create-content.component.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -117,6 +117,31 @@ export class ContentListComponent {
 
 
 
+  title: string = '';
+  errTxt: boolean = false;
+
+  addContent(newContent: Content)
+  {
+    const AddPromise = new Promise((resolve, reject) =>
+    {
+      this.contentArray.push(newContent);
+      console.log(`Content Added successfully, Country: ${this.title}`);
+      this.contentArray = [...this.contentArray];
+      resolve(newContent.title);
+    });
+
+    AddPromise.then(title =>
+    {
+      this.errTxt = false;
+    }).catch(err => {
+      this.errTxt = true;
+    });
+  }
+
+
+
+
+
   /*
   contentArray: Content[] = [
     {

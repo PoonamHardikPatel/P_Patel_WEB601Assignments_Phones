@@ -2,8 +2,19 @@
 
 <p>Phones List</p>
 
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<!-- For Assignment 5 code -->
+
+<app-create-content (onCreation)="addContent($event)"></app-create-content>
 
 
+
+
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
@@ -40,7 +51,9 @@
 
 
 <h1 appHoverAffect="underline" style="padding: 20px; padding-left:550px; margin: 20px; font-size:60px;
-  background-color: antiquewhite; color: darkblue;"> Type : No Type </h1>
+  background-color: antiquewhite; color: darkblue;">
+  Type : No Type
+</h1>
 
 <ul style="padding-left:300px">
   <li style="list-style-type: none; font-family:'Times New Roman', Times, serif;"
@@ -59,7 +72,7 @@
           <img *ngIf="content.imgURL; else defaultURL" [src]="content.imgURL" alt="content image" style="width: 70%; border-radius: 10%;" />
           <ng-template #defaultURL>
             <img src="https://1.bp.blogspot.com/-6j0O7KLU44g/VycGES9Gr4I/AAAAAAAAAWY/IT8jC_2lDMQKuCFUrwMpudemZVYVDjeEwCLcB/s1600/country-wise-mobile-phones-import.png"
-                  alt="default image" style="width: 70%; border-radius: 10%;" />
+                 alt="default image" style="width: 70%; border-radius: 10%;" />
           </ng-template>
         </p>
 
@@ -86,7 +99,9 @@
 
 
 <h1 appHoverAffect="underline" style="padding: 20px; padding-left: 550px; margin: 20px; font-size: 60px;
-  background-color: burlywood; color: darkblue; "> Type : IOS </h1>
+  background-color: burlywood; color: darkblue; ">
+  Type : IOS
+</h1>
 
 <ul style="padding-left:300px">
   <li style="list-style-type: none; font-family:'Times New Roman', Times, serif"
@@ -132,7 +147,9 @@
 
 
 <h1 appHoverAffect="underline" style="padding: 20px; padding-left: 550px; margin: 20px; font-size: 60px;
-  background-color: darksalmon; color: darkblue; "> Type: Android </h1>
+  background-color: darksalmon; color: darkblue; ">
+  Type: Android
+</h1>
 
 <ul style="padding-left:300px">
   <li style="list-style-type: none; font-family:'Times New Roman', Times, serif"
@@ -309,9 +326,6 @@
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
-
-
-
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
@@ -340,8 +354,6 @@
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
-
-
 <!--
   <div>
   <ul>
@@ -349,8 +361,6 @@
   </ul>
 </div>
   -->
-
-
 <!--
 <div *ngFor="let content of Content; let i = index" class="content-card" [ngStyle]="{'border': i == 0 ? '2px solid black' : '1px solid gray'}">
   <header class="content-card-header">

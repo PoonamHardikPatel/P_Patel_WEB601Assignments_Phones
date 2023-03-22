@@ -8,62 +8,30 @@
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------- -->
 <!-- For Assignment 5 code -->
-<!--
+
 <h1 style="padding: 20px; margin: 20px; background-color: lavenderblush; color: darkblue;">
-  Search Form
+  Add new content  item
 
+  <form style="font-size: 20px;">
+    <br />
 
-  <br />
-  <br />
+    <div>
+      <label>ID: <input type="number" [(ngModel)]="newContent.id" name="id"></label> <br />
+      <label>Title: <input type="text" [(ngModel)]="newContent.title" name="title"></label> <br />
+      <label>Description: <input type="text" [(ngModel)]="newContent.description" name="description"></label> <br />
+      <label>ImgURL: <input type="text" [(ngModel)]="newContent.imgURL" name="imgURL"></label> <br />
+      <label>Type: <input type="text" [(ngModel)]="newContent.type" name="type"></label> <br />
+      <label>Tags: <input type="text" [(ngModel)]="newContent.tags" name="tags"></label> <br />
+      <label>Creator: <input type="text" [(ngModel)]="newContent.creator" name="creator"></label> <br> <br />
 
+      <div>
+        <button (click)="addContent()">Add Content</button>
+      </div>
 
-  <div>
-    <label>
-      ID:
-      <input type="number" [(ngModel)]="newContent.id" name="id">
-    </label>
-    <br /> <br />
-    <label>
-      Country:
-      <input type="text" [(ngModel)]="newContent.country" name="country">
-    </label>
-    <br /> <br />
-    <label>
-      Destination:
-      <input type="text" [(ngModel)]="newContent.destination" name="destination">
-    </label>
-    <br /> <br />
-    <label>
-      ImgURL:
-      <input type="text" [(ngModel)]="newContent.imgURL" name="imgURL">
-    </label>
-    <br /> <br />
-    <label>
-      Food:
-      <input type="text" [(ngModel)]="newContent.food" name="food">
-    </label>
-    <br /> <br />
-    <label>
-      Type:
-      <input type="text" [(ngModel)]="newContent.type" name="type">
-    </label>
-    <br /> <br />
-    <label>
-      Tags:
-      <input type="text" [(ngModel)]="newContent.tags" name="tags">
-    </label>
-    <br /> <br />
-  </div>
+    </div> <br />
 
-  <ul>
-    <li *ngFor="let item of searchResults">{{ item.title }}</li>
-  </ul>
+  </form>
+
 </h1>
 
 
-<br />
-<br />
-<hr />
-<br />
-<br />
--->
