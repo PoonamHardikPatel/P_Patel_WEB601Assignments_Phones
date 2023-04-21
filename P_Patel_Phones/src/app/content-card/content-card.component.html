@@ -1,48 +1,17 @@
-<!--<p>content-card works!</p>-->
-
-<!--<div [id]="phone.id" [ngClass]="['card', class]" appHoverAffect="border">
-
-  <div class="card-img" style="list-style-type: none; font-family:'Times New Roman', Times, serif;">
-    <div *ngIf="phone.imgURL; else defaultImage">
-      <img [src]="phone.imgURL" alt={{phone.title}} (click)="handleClick(phone)" width="500px">
-    </div>
-    <ng-template #defaultImage>
-      <img [src]="defaultPhone" alt={{phone.title}} (click)="handleClick(phone)" width="500px">
-    </ng-template>
-  </div>
-
-  <div class="card-body">
-    <h2>{{phone.title}}</h2>
-    <p>{{phone.description}}</p>
-    <p><strong>Creator:</strong> {{phone.creator}}</p>
-    <p *ngIf="phone.type" appHoverAffect="underline"><strong>Type:</strong> {{phone.type}}</p>
-    <p *ngIf="phone.tags">
-      <strong>Tags:</strong>
-      <span *ngFor="let tag of phone.tags" appHoverAffect="bold">
-        {{tag}},
-      </span>
-    </p>
-  </div>
-</div>
-
-<br /><hr /><br />-->
-
-
 <mat-card [id]="phone.id" [ngClass]="['card', class]" appHoverAffect="border">
   <mat-card-header [matTooltip]="phone.title" [matTooltipPosition]="'above'">
-    <div class="card-img" style="list-style-type: none; font-family:'Times New Roman', Times, serif; padding-left: 500px;">
+    <div class="card-img">
       <div *ngIf="phone.imgURL; else defaultImage">
-        <img mat-card-image [src]="phone.imgURL" alt={{phone.title}} (click)="handleClick(phone)" width="500px">
+        <img mat-card-image [src]="phone.imgURL" alt={{phone.title}} (click)="handleClick(phone)">
       </div>
       <ng-template #defaultImage>
-        <img mat-card-image [src]="defaultPhone" alt={{phone.title}} (click)="handleClick(phone)" width="500px">
+        <img mat-card-image [src]="defaultPhone" alt={{phone.title}} (click)="handleClick(phone)">
       </ng-template>
     </div>
   </mat-card-header>
 
   <mat-card-content class="card-body">
-    <h2>{{phone.title}}</h2>
-    <p>{{phone.description}}</p>
+    <h2><a routerLink="/contents/{{phone.id}}">{{phone.title}}</a></h2>
     <p><strong>Creator:</strong> {{phone.creator}}</p>
   </mat-card-content>
 

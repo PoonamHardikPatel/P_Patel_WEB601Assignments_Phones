@@ -13,7 +13,7 @@ export class AppComponent {
 }
 */
 
-
+/*
 import { Component, OnInit } from '@angular/core';
 import { Content } from './helper-files/content-interface';
 import { MessageService } from './services/message.service';
@@ -42,4 +42,25 @@ export class AppComponent {
       }
     });
   }
+}
+*/
+
+
+import { Component, OnInit } from '@angular/core';
+import { Content } from './helper-files/content-interface';
+import { MessageService } from './services/message.service';
+import { PhoneServiceService } from './services/phone-service.service';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  title = 'P_Patel_Phones';
+
+  constructor(private PhoneServiceService: PhoneServiceService) { }
+
+  ngOnInit() { }
+
 }
