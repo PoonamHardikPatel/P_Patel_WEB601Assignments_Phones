@@ -6,6 +6,9 @@
 
 <main>
   <h1 style="padding: 20px; margin: 20px; background-color: lavenderblush; color: darkblue;">
+
+    <app-modify-content (addPhoneEvent)="addNewPhone($event)"></app-modify-content>
+
     <section class="searchForTitle">
       <div>
         <input type="text" [(ngModel)]="searchTitle" placeholder="Search Title here...">
@@ -18,7 +21,7 @@
         </p>
       </div>
     </section>
-   </h1>
+  </h1>
 
     <h1 style="padding: 20px; padding-left:550px; margin: 20px; font-size:60px;
   background-color: antiquewhite; color: darkblue;">Phone Type : No Type</h1>

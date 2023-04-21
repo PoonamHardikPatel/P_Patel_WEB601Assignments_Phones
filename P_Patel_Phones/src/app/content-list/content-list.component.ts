@@ -11,7 +11,7 @@ export class ContentListComponent {
   contents: Content[] = [];
   searchTitle: string = "";
   titleFound: boolean | null = null;
-  defaultBike: string = '/assets/images/defaultPhones.jpg';
+  defaultPhone: string = '/assets/images/defaultPhones.jpg';
 
 
   constructor(private PhoneServiceService: PhoneServiceService) {
@@ -20,6 +20,13 @@ export class ContentListComponent {
 
   ngOnInit() {
     this.PhoneServiceService.getPhones().subscribe(phones => this.contents = phones);
+  }
+
+  addNewPhone(newPhone: Content) {
+    this.PhoneServiceService.addPhone(newPhone).subscribe(newPhoneFromServer => {
+      this.contents.push(newPhoneFromServer);
+      this.contents = [...this.contents];
+    });
   }
 
 
