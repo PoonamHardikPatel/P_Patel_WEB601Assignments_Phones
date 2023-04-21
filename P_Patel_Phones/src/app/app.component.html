@@ -9,7 +9,25 @@
 
 <!--<app-content-list>{{title}}</app-content-list>-->
 
-{{title}}
+<!--{{title}}-->
+
+
+
+<section class="phoneById-sec">
+  <div class="idForm">
+    <form (submit)="findPhoneById()">
+      <label for="phoneId">Enter Phone ID:</label> <br>
+      <input type="number" min="0" id="phoneId" name="phoneId" [(ngModel)]="phoneId" placeholder="Enter Phone ID">
+      <button>Get Phone</button>
+    </form>
+  </div>
+  <div class="oneCard">
+    <app-content-card [phone]="onePhoneById" [class]="'onePhone'"></app-content-card>
+  </div>
+</section>
+
+
+<app-message></app-message>
 
 
 <app-content-list></app-content-list>

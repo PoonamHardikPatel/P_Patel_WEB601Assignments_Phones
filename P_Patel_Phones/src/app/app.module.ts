@@ -7,13 +7,15 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { ContentListPipe } from './content-list.pipe';
 import { FormsModule } from '@angular/forms';
 import { HoverAffectDirective } from './hover-affect.directive';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentListComponent,
     ContentListPipe,
-    HoverAffectDirective
+    HoverAffectDirective,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

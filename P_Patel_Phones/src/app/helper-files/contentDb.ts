@@ -1,0 +1,67 @@
+import { Content } from "./content-interface";
+
+export const contents: Content[] = [
+  {
+    id: 1,
+    title: 'My Android Phone 1',
+    description: 'This is a description of Phone 1.',
+    creator: 'Creator1',
+    imgURL: 'https://media.4rgos.it/i/Argos/9520103_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
+    type: 'android',
+    tags: ['Tag 1.1', 'Tag 1.2'],
+  },
+  {
+    id: 2,
+    title: 'My IOS Phone 2',
+    description: 'This is a description of Phone 2',
+    creator: 'Creator2',
+    imgURL: 'https://media.4rgos.it/i/Argos/9520608_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
+    type: 'ios',
+    tags: ['Tag 2.1', 'Tag 2.2'],
+  },
+  {
+    id: 3,
+    title: 'My Phone 3',
+    description: 'This is a description of Phone 3',
+    creator: 'Creator3',
+    imgURL: 'https://media.4rgos.it/i/Argos/9520055_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
+    type: '',
+    tags: ['Tag 3.1', 'Tag 3.2'],
+  },
+  {
+    id: 4,
+    title: 'My Phone 4',
+    description: 'This is a description of Phone 4',
+    creator: 'Creator4',
+    //imgURL: 'https://media.4rgos.it/i/Argos/9520103_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
+    type: '',
+    tags: ['Tag 4.1', 'Tag 4.2'],
+  },
+  {
+    id: 5,
+    title: 'My Phone 5',
+    description: 'This is a description of Phone 5',
+    creator: 'Creator5',
+    imgURL: 'https://media.4rgos.it/i/Argos/9520608_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
+    type: '',
+    tags: ['Tag 5.1', 'Tag 5.2'],
+  },
+  {
+    id: 6,
+    title: 'My IOS Phone 6',
+    description: 'This is a description of Phone 6',
+    creator: 'Creator6',
+    //imgURL: 'https://media.4rgos.it/i/Argos/9520055_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
+    type: 'ios',
+    tags: ['Tag 6.1', 'Tag 6.2'],
+  },
+  {
+    id: 7,
+    title: 'My Android Phone 7',
+    description: 'This is a description of Phone 7',
+    creator: 'Creator7',
+    //imgURL: 'https://media.4rgos.it/i/Argos/9520055_R_Z001A?w=1500&h=880&qlt=70&fmt=webp',
+    type: 'android',
+    tags: ['Tag 7.1', 'Tag 7.2'],
+  }
+]
