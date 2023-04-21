@@ -8,6 +8,7 @@ import { ContentListPipe } from './content-list.pipe';
 import { FormsModule } from '@angular/forms';
 import { HoverAffectDirective } from './hover-affect.directive';
 import { MessageComponent } from './message/message.component';
+import { ContentCardComponent } from './content-card/content-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MessageComponent } from './message/message.component';
     ContentListComponent,
     ContentListPipe,
     HoverAffectDirective,
-    MessageComponent
+    MessageComponent,
+    ContentCardComponent
   ],
   imports: [
     BrowserModule,
