@@ -1,6 +1,6 @@
 <p>message works!</p>
 
-<section class="messages-sec" *ngIf="MessageService.messages.length">
+<!--<section class="messages-sec" *ngIf="MessageService.messages.length">
   <div class="messages">
     <h2>Messages</h2>
 
@@ -12,6 +12,22 @@
 
     <div class="clrBtn">
       <button (click)="MessageService.clear()">Clear</button>
+    </div>
+  </div>
+</section>-->
+
+<section class="messages-sec" *ngIf="MessageService.messages.length">
+  <div class="messages">
+    <h2>Messages</h2>
+
+    <ul>
+      <li *ngFor="let message of MessageService.messages">
+        {{message}}
+      </li>
+    </ul>
+
+    <div class="clrBtn">
+      <button mat-raised-button color="accent" (click)="MessageService.clear()">Clear <mat-icon>delete_sweep</mat-icon></button>
     </div>
   </div>
 </section>

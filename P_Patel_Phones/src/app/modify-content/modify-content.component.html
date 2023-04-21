@@ -1,6 +1,6 @@
 <p>modify-content works!</p>
 
-<section class="newPhone-Section">
+<!--<section class="newPhone-Section">
   <div>
     <h2>Add New Phone</h2>
     <form class="newPhoneForm" (submit)="addNewPhone()">
@@ -34,5 +34,13 @@
         <button type="submit">Add Phone</button>
       </div>
     </form>
+  </div>
+</section>
+-->
+
+
+<section class="newPhone-Section">
+  <div class="addBtn">
+    <button mat-raised-button color="primary" (click)="openDialog()">Add new Content <mat-icon>add</mat-icon></button>
   </div>
 </section>
